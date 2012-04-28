@@ -1,0 +1,7 @@
+
+/Dependence/GoogleTest/include/gtest.h
+/Dependence/GoogleTest/lib/GoogleTest_dll_d.lib
+/Dependence/GoogleTest/lib/GoogleTest_lib_d.lib
+/Dependence/GoogleTest/lib_x86/GoogleTest_dll_x86.lib
+/Performance Test Main/Performance Test Main.vcxproj.user
+/Performance Test Main/Performance Test Main.vcxproj.vspscc

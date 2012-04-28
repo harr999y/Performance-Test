@@ -1,0 +1,623 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e185f0a4-6cbf-429c-a5fe-154f7f05dbd4" name="UMLClassDiagram1" linkedPackageId="3ea83ef7-edec-47c3-89c1-7a1ede5079a4" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="6d1923ec-a752-42bb-ad21-ef6f1b2c5570" name="Performance Test">
+        <elementDefinition Id="0557442c-3afb-45fa-a8fa-b4d1aaf33b4f" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="c96a3075-ec20-4b2f-aa10-8eb58c1d2621" name="Singleton" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="881b9e65-39d2-44e5-aa02-01654c41b0df" />
+              <ownedAttributesInternal>
+                <property Id="de4aec0d-b224-4cea-85f2-3fe9d4b7d8ca" name="static T * singeleton" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d984e03b-a675-4302-9c0d-8123f85ce767" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="0137b4f5-ed29-472b-bc16-b352ed23eaa1" name="getSingleton" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="947bdd73-4d21-4e25-8bfd-87ad95347b70" />
+                </operation>
+                <operation Id="8a6f5e3d-6fde-4d0a-8ebe-5f7f716444c5" name="getSingletonptr" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="49dbf357-c3c7-4643-b620-d6727077995e" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="a98b9157-d490-40db-aea1-4572a18478d7" name="TestApplication_TimeDepletion" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d2ef86e3-85f2-4e59-b51c-667937dd7068" />
+              <suppliersInternal>
+                <interfaceRealization Id="2cfeed70-a7a5-44b3-b848-4f1363c21ab3">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="a0fdf07b-7d8e-4ade-850d-e229ba539ff7" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="4910d644-e1f5-4c96-ba2c-42523ce4bd6c" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="90ea586c-6b85-4842-9865-07bcad114f1b" />
+                </operation>
+                <operation Id="e830ad83-2dfb-44d0-982c-e99c3f70ecac" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b7d15182-dbc2-4230-8a9d-2ba7cd86e299" />
+                </operation>
+                <operation Id="251c44a8-916b-4df5-8dfa-3cebb877b532" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="39f105b3-56f7-4bd8-b5b5-30e83573fcf4" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="8e0ca8b3-bcba-4b85-adc9-6b2b9d610e74" name="PerfCount" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0a3619f3-0bc9-4616-b5b5-7b1c7a2b009c" />
+              <ownedAttributesInternal>
+                <property Id="61f10577-5fe7-4fb2-b45a-878318433b74" name="mLastStamp" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bddfa27f-2dd6-45f4-8623-f06163362c2f" />
+                </property>
+                <property Id="a580e5b4-71b1-4b7f-8138-3a88cf54a2af" name="mCurrentStamp" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6773ec04-18ef-4314-b943-75290fd8ef86" />
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="1524866a-c011-4cf6-b4c1-7c4f6c0ff215" name="getPerfCount" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="89f5e427-010c-4e70-bb70-6f26c711fe25" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <Interface Id="e7d97a59-05d7-4b68-b593-0b975e351949" name="TestApplication_Interface" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="ce1492eb-3de2-4868-a86a-3bcc7a4405ff" />
+              <ownedOperations>
+                <operation Id="ac9c65b9-2288-4b98-a439-0aae7126d8d7" name="execute" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1ffd3e49-2389-4a7d-b1bc-754b0a10f626" />
+                </operation>
+                <operation Id="c0ef1c6d-22e0-4ace-b03e-444d59c64c63" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="89c1376c-7de1-44aa-b324-9d7f3d4e933a" />
+                </operation>
+              </ownedOperations>
+            </Interface>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="41d7b6a1-afcd-44d3-b222-38c06a0f6d22" name="PerfCountWithWin32API" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2c928a47-bcd5-4b58-8e06-3ada367f99d5" />
+              <generalsInternal>
+                <generalization Id="360d90d0-18b8-4fc2-afe7-e13c41e9e9ba" isSubstitutable="false">
+                  <classMoniker Id="8e0ca8b3-bcba-4b85-adc9-6b2b9d610e74" LastKnownName="PerfCount" />
+                  <elementDefinition Id="a904cacf-8988-4a29-a0fc-741cb8541a52" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="3bbfb549-f8b2-4951-977a-6c8b80f23993" name="queryPerfCount" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1bdad473-91e9-4356-8ad5-e598cb86eb03" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="816865ef-b3ea-4de8-af52-8b08dc85a674" name="TestApplicationFactory" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="63c00c45-dc4c-46c2-880b-aa0e6a815e88" />
+              <suppliersInternal>
+                <dependency Id="408186e1-9149-45f6-9c54-0afe418c4d16">
+                  <classMoniker Id="a596e9f2-a3c5-4c3c-bdad-f7b29c77b60d" LastKnownName="TestApplication_Combine1" />
+                  <elementDefinition Id="5ea53d10-099b-49f5-8ba0-c60ab57f74da" />
+                </dependency>
+                <dependency Id="d3156017-deed-40e1-9639-c21a21e50c98">
+                  <classMoniker Id="a98b9157-d490-40db-aea1-4572a18478d7" LastKnownName="TestApplication_TimeDepletion" />
+                  <elementDefinition Id="30f743e2-8505-4f6f-a84c-4ee2b22b7ad4" />
+                </dependency>
+                <dependency Id="f34b05b2-fa71-40ae-a914-6bf097065869">
+                  <classMoniker Id="6f6a3334-f481-4983-8db5-5cb085fde9ca" LastKnownName="TestApplication_CycleSum1" />
+                  <elementDefinition Id="e6aaade8-700f-42d2-aaf0-6b255ab776c6" />
+                </dependency>
+                <dependency Id="ba753f54-bb34-4e13-a303-6ac94169e0c3">
+                  <classMoniker Id="e9c6118f-62d3-4fd6-aaa2-5619c46590b3" LastKnownName="TestApplication_CycleSum2" />
+                  <elementDefinition Id="fc56de6e-ad26-4adb-83dd-43ee9283a676" />
+                </dependency>
+                <dependency Id="d4f44ffe-e00d-4917-b72a-55ff0cbb42aa">
+                  <classMoniker Id="a596e9f2-a3c5-4c3c-bdad-f7b29c77b60d" LastKnownName="TestApplication_Combine1" />
+                  <elementDefinition Id="c7c01437-deb5-4f55-82c1-85e6c288e6c4" />
+                </dependency>
+                <dependency Id="c62e9d1d-4fd2-4bc2-bd91-9e439851cf79">
+                  <classMoniker Id="d847dc0a-c512-4cf3-ba55-b370f138a77a" LastKnownName="TestApplication_Combine2" />
+                  <elementDefinition Id="9a78120a-03b5-483e-92a6-0a515673e225" />
+                </dependency>
+                <dependency Id="fd6d682a-7db5-47cf-bdd5-90a2b13c6b19">
+                  <classMoniker Id="faff32f0-289d-4e0e-931a-c74191b95221" LastKnownName="TestApplication_Combine3" />
+                  <elementDefinition Id="94b5a729-f042-4a1f-b271-80ebbac8d9e4" />
+                </dependency>
+                <dependency Id="5aaefe8f-a4ed-477e-864b-a4ec5395325d">
+                  <classMoniker Id="48a38905-6754-4e93-b789-1e7fd65a637f" LastKnownName="TestApplication_Combine4" />
+                  <elementDefinition Id="d223b74e-321e-49ca-a95f-00ca31b79fce" />
+                </dependency>
+                <dependency Id="c6435578-04b7-4b4f-955b-d549df78b6e0">
+                  <classMoniker Id="a4fa3b95-23af-483f-b682-e741e109c9ae" LastKnownName="TestApplication_Combine5" />
+                  <elementDefinition Id="282394ad-24ce-44aa-95cf-3192f1b313f3" />
+                </dependency>
+                <dependency Id="4437f94a-bdc2-4b74-a587-11defc3aa095">
+                  <classMoniker Id="85db32c4-aa8b-444c-946e-6b8d16847faf" LastKnownName="TestApplication_MinMax2" />
+                  <elementDefinition Id="e8478a8a-2097-45a3-8026-dc546bb04a33" />
+                </dependency>
+                <dependency Id="80df1634-30ab-483b-b19f-ce8bcaecce53">
+                  <classMoniker Id="48a38905-6754-4e93-b789-1e7fd65a637f" LastKnownName="TestApplication_Combine4" />
+                  <elementDefinition Id="48617611-88d8-41e1-9d0a-5c7399677aaf" />
+                </dependency>
+                <dependency Id="ee71fa44-e84e-478c-954f-02bb1ac96272">
+                  <classMoniker Id="faff32f0-289d-4e0e-931a-c74191b95221" LastKnownName="TestApplication_Combine3" />
+                  <elementDefinition Id="320fd927-e99f-45f8-b4be-d03ea432a7a4" />
+                </dependency>
+                <dependency Id="55b7d5d3-3d92-434c-8b28-e9649b02e049">
+                  <classMoniker Id="d847dc0a-c512-4cf3-ba55-b370f138a77a" LastKnownName="TestApplication_Combine2" />
+                  <elementDefinition Id="0c721ae2-e98b-48dc-a012-587abdb749ed" />
+                </dependency>
+                <dependency Id="c0462ebd-5fce-4d7c-865b-1616c8d8377d">
+                  <classMoniker Id="85db32c4-aa8b-444c-946e-6b8d16847faf" LastKnownName="TestApplication_MinMax2" />
+                  <elementDefinition Id="8c4ac984-9934-4148-9579-3b3cd304b0a8" />
+                </dependency>
+                <dependency Id="f0e53957-c346-4657-9d79-5f175fce22be">
+                  <classMoniker Id="6f567d85-2c39-46bc-b574-e76e2f79e328" LastKnownName="TestApplication_MinMax1" />
+                  <elementDefinition Id="7b14f260-abc8-451a-9a6f-811cb3bea03f" />
+                </dependency>
+                <dependency Id="0ec12797-612f-4c73-91cf-717f96c8a7c7">
+                  <classMoniker Id="8ad82979-8f90-4cec-b96b-ac0ee56e601d" LastKnownName="TestApplication_Combine7" />
+                  <elementDefinition Id="1b4e13c8-71ab-4a8d-ba48-a5d5374237e4" />
+                </dependency>
+                <dependency Id="12c39b3e-7699-4c32-a80c-16cccce27614">
+                  <classMoniker Id="ecd9f2d8-0375-4744-8e94-b196d4672a55" LastKnownName="TestApplication_Combine6" />
+                  <elementDefinition Id="e11a568d-b469-4e82-8fc2-f60f9c9f2a08" />
+                </dependency>
+                <dependency Id="6787adc4-cdeb-4dec-ab7d-a81c04143795">
+                  <classMoniker Id="ed5f5641-dc01-4b0c-9de3-25b9f9887a78" LastKnownName="TestApplication_AboutMemory3" />
+                  <elementDefinition Id="ffa47a72-ad74-488a-8371-a0145c1b4140" />
+                </dependency>
+                <dependency Id="1e7f1dd0-7e5a-45c2-9ffe-1b13cee23add">
+                  <classMoniker Id="b9165791-2f1d-4423-a572-3f9c04a27d0d" LastKnownName="TestApplication_AboutMemory2" />
+                  <elementDefinition Id="4be55910-dacf-4c4c-a9e8-6b12d20246e1" />
+                </dependency>
+                <dependency Id="fa305511-236d-41e7-acb1-3d2ff4c3e7aa">
+                  <classMoniker Id="ebd63706-be59-4a52-912e-687a5abab91b" LastKnownName="TestApplication_AboutMemory1" />
+                  <elementDefinition Id="d44ce154-34ce-4c2a-bc72-bdf714229c97" />
+                </dependency>
+              </suppliersInternal>
+              <generalsInternal>
+                <generalization Id="7739f4cc-98b8-4461-a898-bfdedc39a7d7" isSubstitutable="false">
+                  <classMoniker Id="c96a3075-ec20-4b2f-aa10-8eb58c1d2621" LastKnownName="Singleton" />
+                  <elementDefinition Id="488a37f5-e3f1-4eb4-8583-0b977ecbd272" />
+                </generalization>
+              </generalsInternal>
+              <ownedOperationsInternal>
+                <operation Id="f30408ed-1afa-4ff7-8408-d4d421b78335" name="getTestApp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c145699c-19c2-4d80-97e5-24b0a709c3de" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <enumeration Id="94a183bd-4920-490c-9a3a-3bdaf1760d8b" name="TestKind" isAbstract="false" isLeaf="false">
+              <elementDefinition Id="2430cea0-856c-479c-89fb-0e2d06a5f070" />
+              <ownedLiterals>
+                <enumerationLiteral Id="45f5b729-42c2-4a65-b3e5-b8d971c11fc5" name="TIME_DEPLETION">
+                  <elementDefinition Id="8c5ea4b3-9599-48c3-8d8f-c8cf2e51bd24" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="72aaa8f1-8910-4019-8f57-df04b2f00ceb" name="CYCLE_SUM_1">
+                  <elementDefinition Id="09cde582-72be-40b5-ba6c-b9928647d4fc" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="2363360f-f128-4f36-918d-5bcc42355b95" name="COMBINE_1">
+                  <elementDefinition Id="c31b2f42-c2c0-442c-b8a4-7f3b257ee5e5" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="f4dcd298-2164-49b0-b0c2-42c505f75aa8" name="COMBINE_2">
+                  <elementDefinition Id="12754977-78c3-4e7b-a876-8902f8dbe2ae" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="fedfcd81-3744-431c-98e1-24acbfe81493" name="COMBINE_3">
+                  <elementDefinition Id="e42d1f9b-2baa-45ec-b82e-07e474e7567d" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="02810d8e-3876-4302-a128-7248d64b538d" name="COMBINE_4">
+                  <elementDefinition Id="64073ec5-28a7-473d-ba62-84bac13e8cb0" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="3356148a-78c5-4a7c-8054-94a1e85c95ff" name="COMBINE_5">
+                  <elementDefinition Id="27731b40-30d1-42f9-bfc2-4d1e2a7bb85c" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="5c64948e-adb5-477b-b002-e6230e5d0f46" name="COMBINE_16">
+                  <elementDefinition Id="083a9281-d7e1-42a8-9678-b8850c767c35" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="69e30f58-b5ef-43ec-83af-194c555a36da" name="COMBINE_7">
+                  <elementDefinition Id="caa3b428-ea55-4d3c-9526-223651c36fbf" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="0d7d59db-b22f-4a8d-8a2f-ffac2d8a9f28" name="MIN_MAX_1">
+                  <elementDefinition Id="c6d80fa4-e0d6-41a6-953c-81a414b11841" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="b572d7d4-dfc7-45b4-b2ed-365e8268e25d" name="CYCLE_SUM_2">
+                  <elementDefinition Id="13675c78-318b-4d11-b9f2-48df87cf5a7d" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="f046bd52-fd84-403c-9c91-45f178e5ba63" name="MIN_MAX_2">
+                  <elementDefinition Id="8f9c4b19-86b6-4833-9033-c5ba4e6c4de3" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="ffceb03f-791d-470c-b238-9434536007d6" name="ABOUT_MEMORY_1">
+                  <elementDefinition Id="c9d62b5c-2922-473e-b4e5-d243ed34a936" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="fa9c2186-a045-4503-9be4-9989ede42f5b" name="ABOUT_MEMORY_2">
+                  <elementDefinition Id="15ff3dab-58ed-45ef-8811-d44b25a813d9" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="55054b88-95d7-4770-94ef-b14a2387d06e" name="ABOUT_MEMORY_3">
+                  <elementDefinition Id="22c5cfe5-d061-4494-a93e-2903c0efcdf8" />
+                </enumerationLiteral>
+                <enumerationLiteral Id="969b117a-7724-4f64-859a-59a888c2ef3b" name="MAX_CASE">
+                  <elementDefinition Id="de7f272b-45f9-4647-8ac8-f4d096470af0" />
+                </enumerationLiteral>
+              </ownedLiterals>
+            </enumeration>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="a596e9f2-a3c5-4c3c-bdad-f7b29c77b60d" name="TestApplication_Combine1" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f5acf2af-8812-4447-a6c7-7acf69613f30" />
+              <suppliersInternal>
+                <interfaceRealization Id="00cdc8c1-657f-408e-8d60-36f193e287e1">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="29e44202-790c-4855-a765-addc3d829b04" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="8712c8f4-5328-4462-b771-c959c06f9741" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="72e29eae-8cad-4b13-89d6-fa7c21eb1e7f" />
+                </operation>
+                <operation Id="5bc07093-0e25-4b08-83ba-91c3b3d2eff2" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="f24796be-7bb5-4f9c-a291-6d25f4a98587" />
+                </operation>
+                <operation Id="3926df7c-db22-45e9-a6f8-e4c3a8fef8a3" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="3fe666e3-c8fb-4b05-9d44-617020662833" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="d847dc0a-c512-4cf3-ba55-b370f138a77a" name="TestApplication_Combine2" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="8d31c6f3-768e-4a8a-847a-22310904dd70" />
+              <suppliersInternal>
+                <interfaceRealization Id="0e8e1315-97e2-4c34-a75a-5be6501d10cc">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="6a64158f-297c-4e4e-b433-f9a28222205a" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="fdec4a60-6d42-48e4-95d7-2978296ba33e" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="bb9bcf1e-eafa-42cf-b237-c0b7cc7829ea" />
+                </operation>
+                <operation Id="c0fd3824-8cff-4b7e-978a-f6f1ea8b48d7" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="aae79f24-dc8e-408c-9138-e4ee844e9829" />
+                </operation>
+                <operation Id="68a41593-cb16-47c6-9ae9-8514de19fa80" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="cfc1db4d-8139-448c-bcd3-fd31126f57d0" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="faff32f0-289d-4e0e-931a-c74191b95221" name="TestApplication_Combine3" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="144555b0-1dcc-48a9-8af3-20f81653bfe4" />
+              <suppliersInternal>
+                <interfaceRealization Id="537270d0-61d9-4b06-b965-2db9fc197213">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="099c5a79-5251-4dac-b234-60b5d2349038" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="28976bc5-f142-47d0-b2e9-c18e4d4bb2a1" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="24e31c18-36b0-4b37-9bdc-51817c990e51" />
+                </operation>
+                <operation Id="5e4dfb8d-4879-4421-ac9e-effefd3e0c66" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="89d51e58-4cb8-4186-886e-e41e837322df" />
+                </operation>
+                <operation Id="325690c4-d893-42d6-94e0-96318d31aba7" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="943eeb99-aafe-4606-96ab-5ed9b5afe809" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="48a38905-6754-4e93-b789-1e7fd65a637f" name="TestApplication_Combine4" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="31526190-96c4-4c08-bcb5-3e6284c09d5e" />
+              <suppliersInternal>
+                <interfaceRealization Id="af8416bc-fc64-4d13-b7c6-90ff02160df5">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="64561a6c-24ab-4ab5-843e-556c6efad0c9" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="d211e135-1b17-4a2f-b93d-1cf3ee5801b5" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="95046ac9-3d05-4593-95ac-75be2faefe59" />
+                </operation>
+                <operation Id="1b2d51c8-c450-4966-9239-5e76a15f2135" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2dd1dedf-b363-4878-8377-a14f6137170d" />
+                </operation>
+                <operation Id="301e2ffd-4e14-4203-8702-a3c3614461f2" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a07beb73-9dac-456c-b74d-247ea929d44a" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="a4fa3b95-23af-483f-b682-e741e109c9ae" name="TestApplication_Combine5" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="6a5b3bf5-dfd0-4528-bc19-3548b6746f5c" />
+              <suppliersInternal>
+                <interfaceRealization Id="fb8a98bc-695a-4c8e-93db-76785e56b873">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="ac8a0e62-5f90-45e2-b3e0-62c1e4df5306" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="b9973e35-dd54-4d9d-825c-e7b3eb1078eb" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="fd64ff85-3395-47a1-9229-187bbe9a95c8" />
+                </operation>
+                <operation Id="bf8dc5fd-357c-4bfb-912a-c18aeeb8a2bc" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7b4edcb7-dfa1-437e-90b5-0cfa0014912e" />
+                </operation>
+                <operation Id="83c6930d-bbca-4b0b-a32c-c7a443de1096" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1e3f09c9-26a3-414f-855e-861a311489aa" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="85db32c4-aa8b-444c-946e-6b8d16847faf" name="TestApplication_MinMax2" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="4185713d-c71f-4957-b697-38dbc4cd95d6" />
+              <suppliersInternal>
+                <interfaceRealization Id="99bba0d6-df79-471c-aed9-7ca17c595352">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="3f790d16-0f6d-4b93-80f1-0a5ed5aac0f2" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="f2c113f8-d1d7-4c37-b98b-86b78ba92cad" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="db73db3d-3bf8-4bba-af66-e394140ce498" />
+                </operation>
+                <operation Id="708cc254-030a-4046-a4fc-9c85187e0835" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8b607a3a-c1fb-44f3-81fa-46fcd6647f09" />
+                </operation>
+                <operation Id="2e8c7785-d77f-4283-9741-b7c98987593f" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="cc82bc5c-d528-431b-b14d-d3b069b4c39e" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6f6a3334-f481-4983-8db5-5cb085fde9ca" name="TestApplication_CycleSum1" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="afb31f17-6c38-440a-b325-8b055f81eefc" />
+              <suppliersInternal>
+                <interfaceRealization Id="48e94712-4bb3-40b6-a918-049285c474d2">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="0e007e69-168e-47f4-b45d-b0aef9c85716" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="ca955f4b-3304-45c6-9ea7-a75f9ee1eff8" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7f3d7663-03db-4786-90b6-fa64b4fb7d07" />
+                </operation>
+                <operation Id="8ea66488-dfd5-4119-b668-4239b2878ceb" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="dcbc6876-b05a-42f3-8552-03a657786433" />
+                </operation>
+                <operation Id="82d19318-a307-48e9-8cbc-c037267bc069" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="cec217e5-ba86-4123-9103-2954a59cf3f0" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="e9c6118f-62d3-4fd6-aaa2-5619c46590b3" name="TestApplication_CycleSum2" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="70700160-af82-45cb-b4a4-08c09bf16886" />
+              <suppliersInternal>
+                <interfaceRealization Id="c6672b75-7570-4204-b182-bac20aeea544">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="ce7d7919-cb92-4ffe-8e30-e6a912b34756" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="1cfa971e-f005-4a0e-9ada-af3f770d4483" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="c07e9b14-c1ba-48f0-9f19-103790de6d8b" />
+                </operation>
+                <operation Id="6890f3b8-679b-4d3f-8d7a-e0ff97c44775" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="46d585a0-0862-4f6e-8981-03397b475fde" />
+                </operation>
+                <operation Id="015ff595-b956-49ab-9d6f-0f2035db906d" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d0c0b3cd-ceb0-486c-bcc5-1186d7295745" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ecd9f2d8-0375-4744-8e94-b196d4672a55" name="TestApplication_Combine6" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="0bb4b4f1-f41a-4864-a89c-b92f839fdaa4" />
+              <suppliersInternal>
+                <interfaceRealization Id="3d02008c-e60f-4929-bc2d-747f8505c968">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="380a6ebe-a5f9-4a39-8ec2-ad867b5b90ab" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="93ebb53c-6a7d-41aa-a07b-cff16cca311e" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9ecd082b-7b27-4adf-93a2-81244b9d603b" />
+                </operation>
+                <operation Id="285ab1f6-8ba9-4432-8e9c-67d18b1a9019" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="88bf2390-bebb-493d-8ae6-a4e80e37fd47" />
+                </operation>
+                <operation Id="75058d72-55de-4a9d-84e6-0c39aacf626f" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9cb5c8fa-fbc7-4b00-bad1-7c701f5e2365" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="6f567d85-2c39-46bc-b574-e76e2f79e328" name="TestApplication_MinMax1" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="fc934bdf-14ff-4a89-a5ce-a46b7eaffdc3" />
+              <suppliersInternal>
+                <interfaceRealization Id="80133033-d921-4ead-9326-980f5df49abf">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="2444f360-eb64-4961-80a7-9fc9b93d6b5b" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="ac3b9ce8-dbd7-40a7-9b80-530f9cac5614" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="097d8c34-54b2-4fdd-b1ac-8f15c8f7f1c4" />
+                </operation>
+                <operation Id="c8c8f99c-eb42-437d-aa63-5d74292f0e7a" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="24ed178d-7b6f-44f7-9e29-539869417685" />
+                </operation>
+                <operation Id="a9fb7010-4e72-4d4a-9cd3-573e646f0c07" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="8d12a3a7-1704-48ef-bcdd-b68a00c233c7" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="8ad82979-8f90-4cec-b96b-ac0ee56e601d" name="TestApplication_Combine7" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="d8efbeca-e00c-4b9b-8dde-b519c51f10da" />
+              <suppliersInternal>
+                <interfaceRealization Id="f7db2bad-6dec-4b72-b15b-1ff7c3bd3c05">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="f0c06f8a-7dbe-460a-b537-69c2aa7d927e" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="7690fbd3-762a-495c-b5d8-b657c1ebfaa3" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="abb91c5a-c0b2-44e6-8b34-a54f5803c00f" />
+                </operation>
+                <operation Id="7c683508-4b12-4ac8-be86-1d204d712ae0" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="fbdf1064-1dad-418f-8477-18c7e739d93c" />
+                </operation>
+                <operation Id="cf2c4f49-f567-400d-8464-6e9adc64a4cb" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4ed498c3-cb80-48e3-a963-96fb8feed0fa" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ebd63706-be59-4a52-912e-687a5abab91b" name="TestApplication_AboutMemory1" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="12bbf70c-8595-4df8-a9cc-61094e8163ef" />
+              <suppliersInternal>
+                <interfaceRealization Id="6b2e0c01-d427-4ef9-a33c-62fcc3f7ffcc">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="7f163285-f256-487f-801e-6552e0234f05" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="3dca217c-d3f8-4b99-95cb-e17bf41b7d70" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="2d660860-7707-43a5-a0b3-796f4172c4d6" />
+                </operation>
+                <operation Id="989375d6-3b2c-4ee5-97e6-9643fb136ca9" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="aa9b0aff-57c9-444c-8bee-03b36a4dcece" />
+                </operation>
+                <operation Id="cf723d51-5e78-4e93-9118-d4245da17fc4" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="78abb82c-b4fb-42c9-8467-42c83d373fec" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="b9165791-2f1d-4423-a572-3f9c04a27d0d" name="TestApplication_AboutMemory2" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="b532d069-a410-400b-8ad9-229c0a254b71" />
+              <suppliersInternal>
+                <interfaceRealization Id="03d2ef4c-5e20-43db-9845-2046ca536cd2">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="44d2bc16-11fb-40a8-9e62-c0549481af95" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="b636c2e7-df32-460b-8f23-3db41e108d96" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="28541aac-85ed-4bb2-aed6-0dfd06bb5d1a" />
+                </operation>
+                <operation Id="5478ee1e-ee77-4969-aab3-dbe3960524c0" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="7a6504fc-d467-426c-8008-6dab7cf17d7e" />
+                </operation>
+                <operation Id="5465ded5-879f-418c-88fd-b67a2fd8a881" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="d7890bea-8d8d-4984-9289-73a5352e1a26" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ed5f5641-dc01-4b0c-9de3-25b9f9887a78" name="TestApplication_AboutMemory3" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ed50970c-3cf2-4a77-83f6-3f58719f3b5a" />
+              <suppliersInternal>
+                <interfaceRealization Id="391c60c0-0342-4969-99e7-9bcc5ce784c0">
+                  <interfaceMoniker Id="e7d97a59-05d7-4b68-b593-0b975e351949" LastKnownName="TestApplication_Interface" />
+                  <elementDefinition Id="a6cfeec9-c7bd-4515-a83a-3196c3104d20" />
+                </interfaceRealization>
+              </suppliersInternal>
+              <ownedOperationsInternal>
+                <operation Id="5984814f-74a2-484a-9439-ccd20c424c89" name="virtual execute_impl" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="39475ef0-b449-4658-a3aa-82d6def92a79" />
+                </operation>
+                <operation Id="63cb036b-a3db-400f-8b7f-eabf4fe6ab9c" name="execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="e6fa9e5b-3fed-43ab-9023-5955c9d6934f" />
+                </operation>
+                <operation Id="62f467d2-a31b-4196-a418-d9279eae106f" name="virtual execute_impl" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="1dca53a3-6dd3-402a-a50a-fefba8dea407" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="743ac07c-4e9c-4e39-82a1-04bc067a0e44" name="Performance Test main">
+        <ownedCommentsInternal>
+          <comment Id="a07cb225-1d1a-4fff-bcae-9c5f14f53457">
+            <elementDefinition Id="a39bcf21-c916-41a4-a7db-afd8537adab0" />
+            <body>int main()
+{...}</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="d4f18f44-ad2c-4bf8-842e-3c2f0f8bdaf7" />
+        <suppliersInternal>
+          <dependency Id="afa5ed80-81a8-488b-8fb5-ba6a017a6353">
+            <packageMoniker Id="6d1923ec-a752-42bb-ad21-ef6f1b2c5570" LastKnownName="Performance Test" />
+            <elementDefinition Id="d47ce8f3-f889-4c31-8482-dc2a0caa07e5" />
+          </dependency>
+        </suppliersInternal>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="4d367b3f-ae02-4202-90b0-545328ca728f" name="Unit Tests">
+        <ownedCommentsInternal>
+          <comment Id="9c3cbee6-efa6-4e6d-b42b-b812dcf80750">
+            <elementDefinition Id="126f9c8b-0966-4eed-bc3c-d63a8a81dc9f" />
+            <body>int main()
+{...}</body>
+            <annotatedElements>
+              <classMoniker Id="24f83ffc-362a-4aea-a082-8b72c97ab91b" LastKnownName="PerfCountTestWithParam" />
+            </annotatedElements>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="f43a89ab-61e2-462c-ad9e-38fca0c9b8cc" />
+        <suppliersInternal>
+          <dependency Id="4de1dc92-ff7e-49cf-945a-2d8df639255d">
+            <packageMoniker Id="6d1923ec-a752-42bb-ad21-ef6f1b2c5570" LastKnownName="Performance Test" />
+            <elementDefinition Id="5a34a197-3347-4170-b7ad-a2f8c293412e" />
+          </dependency>
+        </suppliersInternal>
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="24f83ffc-362a-4aea-a082-8b72c97ab91b" name="PerfCountTestWithParam" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2f878f43-67d7-4b59-9713-f6416d5a149d" />
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+  </packagedElements>
+  <package Id="3ea83ef7-edec-47c3-89c1-7a1ede5079a4" name="UML_Model">
+    <elementDefinition Id="07fd6a31-da8b-42e3-954a-87596d1e6824" />
+    <profileInstances>
+      <packageHasProfileInstances Id="6f447705-e99e-44df-8321-6b444eb26f08">
+        <profileInstance Id="265c9228-cc05-4727-9f23-28b6fdc4e451" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="ff15c269-817d-409a-a705-9fc1929ecca6">
+        <profileInstance Id="3e49d06c-4d50-4ae8-bfdb-9f7ff46bfa76" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

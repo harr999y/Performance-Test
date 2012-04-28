@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="d4f18f44-ad2c-4bf8-842e-3c2f0f8bdaf7"
+  name="Performance Test main" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="a39bcf21-c916-41a4-a7db-afd8537adab0">
+      <body>int main()
+{...}</body>
+    </comment>
+  </ownedCommentsInternal>
+  <suppliersInternal>
+    <dependency
+      Id="d47ce8f3-f889-4c31-8482-dc2a0caa07e5">
+      <packageMoniker
+        Id="0557442c-3afb-45fa-a8fa-b4d1aaf33b4f"
+        LastKnownName="Performance Test"
+        LastKnownLocation="Package_2241.uml" />
+    </dependency>
+  </suppliersInternal>
+</package>

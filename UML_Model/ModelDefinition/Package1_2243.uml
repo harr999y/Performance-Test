@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f43a89ab-61e2-462c-ad9e-38fca0c9b8cc"
+  name="Unit Tests" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="126f9c8b-0966-4eed-bc3c-d63a8a81dc9f">
+      <body>int main()
+{...}</body>
+      <annotatedElements>
+        <classMoniker
+          Id="2f878f43-67d7-4b59-9713-f6416d5a149d"
+          LastKnownName="PerfCountTestWithParam"
+          LastKnownLocation="Package1_2243.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <suppliersInternal>
+    <dependency
+      Id="5a34a197-3347-4170-b7ad-a2f8c293412e">
+      <packageMoniker
+        Id="0557442c-3afb-45fa-a8fa-b4d1aaf33b4f"
+        LastKnownName="Performance Test"
+        LastKnownLocation="Package_2241.uml" />
+    </dependency>
+  </suppliersInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="2f878f43-67d7-4b59-9713-f6416d5a149d"
+        name="PerfCountTestWithParam"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
